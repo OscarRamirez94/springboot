@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Descripcion</th>
+				<th>Precio</th>
+				<th>Horas</th>
+			</tr>
+		<tbody th:each=" course:${courses}">
+			<tr>
+				<th th:text="${course.name}"></th>
+				<th th:text="${course.description}"></th>
+				<th th:text="${course.price}"></th>
+				<th th:text="${course.hours}"></th>
+			</tr>
+		</tbody>
+	</thead>
+</table>
+</body>
+</html>

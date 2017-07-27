@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Formulario here</title>
+</head>
+<body>
+<h1>Este es el fuck Formulario : =)</h1>
+ <form action="#" th:action="@{/Course/addCourse}" th:object="${course}" method="POST">
+	<span>Nombre : </span>
+	<input type="text" name="name" th:field="*{name}"/>	<br/>
+	<span>Descricion : </span>
+	<input type="text" name="description" th:field="*{description}" /><br/>
+	<span>Precio : </span>
+	<input type="int" name="name" th:field="*{price}"/>	<br/>
+	<span>Horas : </span>
+	<input type="int" name="hours" th:field="*{hours}" /><br/>
+	<input type="Submit"  value="Enviar"/>	
+</form>
+<!-- <form action="/example3/addPerson" method="POST"> -->
+<!-- <input type="text" name="name"/> -->
+<!-- <input type="number" name="age"/> -->
+<!-- <input type="submit" value="enviar"/> -->
+<!-- </form> -->
+</body>
+</html>
